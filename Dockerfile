@@ -27,4 +27,8 @@ ENV KC_HOSTNAME=cloud.cbh.kth.se
 
 # start dev : to do
 # Set the entry point for development mode
-CMD ["/opt/keycloak/bin/kc.sh", "start-dev"]
+# CMD ["/opt/keycloak/bin/kc.sh", "start-dev"]
+# CMD /opt/keycloak/bin/kc.sh start-dev
+
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+
