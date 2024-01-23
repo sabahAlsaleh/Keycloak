@@ -22,6 +22,9 @@ ENV KC_DB_USERNAME=<root>
 ENV KC_DB_PASSWORD=<>
 # DBPASSWORD
 ENV KC_HOSTNAME=cloud.cbh.kth.se
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+
+# ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
 
 # start dev : to do
+# Set the entry point for development mode
+CMD ["/opt/keycloak/bin/kc.sh", "start-dev"]
