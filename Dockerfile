@@ -17,9 +17,9 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # change these values to point to a running postgres instance
 ENV KC_DB=mysql
-ENV KC_DB_URL=<jdbc:mysql://130.237.83.249:2538/patientsystemdb>
-ENV KC_DB_USERNAME=<root>
-ENV KC_DB_PASSWORD=<>
+ENV KC_DB_URL=jdbc:mysql://130.237.83.249:2538/patientsystemdb
+ENV KC_DB_USERNAME=root
+#ENV KC_DB_PASSWORD=<>
 # DBPASSWORD
 ENV KC_HOSTNAME=cloud.cbh.kth.se
 
